@@ -119,12 +119,13 @@ main {
     padding: 0 50px;
     max-width: 900px;
     text-align: center;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 800px) {
   main {
     padding: 20px;
-    margin-top: -35px;
+    margin-top: -40px;
   }
 }
 main .media {
