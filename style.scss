@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   background-color: $bg-body-dark;
   font-family: "Inter", sans-serif;
-  margin-bottom: 72px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,6 +104,7 @@ header {
     display: flex;
     align-items: center;
     padding: 3px;
+    cursor: pointer;
 
     .sircle {
       width: 18px;
@@ -128,13 +129,15 @@ main {
   padding: 0 165px;
   margin-top: -100px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1440px) {
     padding: 0 50px;
+    max-width: 900px;
+    text-align: center;
   }
 
   @media (max-width: 800px) {
     padding: 20px;
-    margin-top: -40px;
+    margin-top: -35px;
   }
 
   .media {
@@ -165,6 +168,8 @@ main {
       background-color: $bg-card-dark;
       padding: 32px;
       border-radius: 5px;
+      position: relative;
+      overflow: hidden;
 
       @media (max-width: 800px) {
         width: 40%;
@@ -172,6 +177,28 @@ main {
 
       &:hover {
         background-color: $bg-card-dark-hover;
+      }
+
+      .border {
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        top: 0;
+      }
+
+      .f-border {
+        background-color: #1da1f2;
+      }
+
+      .t-border {
+        background-color: #178ff5;
+      }
+      .i-border {
+        background: linear-gradient(225deg, #df4896 0%, #ee877e 50.91%, #fdc366 100%);
+      }
+
+      .y-border {
+        background-color: #c4032b;
       }
 
       h3 {
